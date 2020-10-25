@@ -1,6 +1,6 @@
 # first_project
 
-A Simple Apple in flutter which shows available courses and tutors with availability to reserve tutors or send them mail
+A Simple App in flutter which shows available courses and tutors with availability to reserve tutors or send them mail
 ## Getting Started
 
 This project is a starting point for a Flutter application.

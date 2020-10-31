@@ -8,7 +8,7 @@ class Tutor extends StatelessWidget {
   const Tutor(this.name, this.biography, this.email);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return (Scaffold(
         appBar: AppBar(
           title: Text('Available Tutors'),
           backgroundColor: Colors.orangeAccent,
@@ -49,7 +49,9 @@ class Tutor extends StatelessWidget {
                               color: Colors.orangeAccent,
                             ),
                           ),
-                          onPressed: () {/* ... */},
+                          onPressed: () {
+                            print(name);
+                          },
                         ),
                         SizedBox(),
                         const SizedBox(width: 8),
@@ -66,6 +68,6 @@ class Tutor extends StatelessWidget {
                   ],
                 ),
               ))),
-        )));
+        ))));
   }
 }

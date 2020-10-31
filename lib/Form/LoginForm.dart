@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:first_project/Home/available_courses.dart';
 
 class CustomForm extends StatefulWidget {
   @override
@@ -76,6 +77,10 @@ class LoginForm extends State<CustomForm> {
             onPressed: () {
               if (_formkey.currentState.validate()) {
                 _formkey.currentState.save();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CourseApp()),
+                );
               } else {}
             },
           )),

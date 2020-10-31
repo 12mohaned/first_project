@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:first_project/Home/available_courses.dart';
 
 final GlobalKey<FormState> _formkey = GlobalKey<FormState>();
 
@@ -118,6 +119,10 @@ class SignupForm extends State<MyCustomForm> {
             onPressed: () {
               if (_formkey.currentState.validate()) {
                 _formkey.currentState.save();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CourseApp()),
+                );
               } else {}
             },
           )),

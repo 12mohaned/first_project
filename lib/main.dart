@@ -2,7 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'Form/SignupForm.dart';
 import 'Form/LoginForm.dart';
+import 'package:firebase_core/firebase_core.dart';
 
+// final FirebaseApp app = FirebaseApp(
+//     options: FireBaseOptions(
+//   googleAppID: '1:815350613612:android:fbcc79ec0a650281997a49',
+//   apiKey: 'AIzaSyAp-oj5iHqyyMf4apAIxv6opAJJ8k5Yt_A',
+//   databaseURL: 'https://tutorme-47793.firebaseio.com',
+// ));
 void main() {
   runApp(ChooseApp());
 }
